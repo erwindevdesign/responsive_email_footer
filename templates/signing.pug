@@ -1,0 +1,117 @@
+extend template.pug
+block content
+    table.three-column(border="0",align="left",width="100%", style="display:block;max-width:650px;border-collapse: collapse;", cellspacing="0", cellpadding="0",)
+        tbody 
+            //  Start (gap-in01-block) Section  
+            tr.spacing(style="display:block;")  
+            tr(height="10px")
+
+            //  End (gap-01-block) Section  
+            // ========== Start (user-block) Section ========== 
+            tr.user(style="display:block;") 
+
+                td 
+                    // user_data container
+                    table(border="0",width="100%", style="display:block;width:150px;max-width:150px;border-collapse: collapse;", cellspacing="0", cellpadding="0",) 
+                        tbody
+                            td 
+                                tr 
+                                    td(height="150")
+                                        span 
+                                        
+                                            // user image
+                                            img.userimage(src="", alt="",width="145px", height="145px", style="background: url(https://i.imgur.com/u2uHfRu.jpg);display: block; max-width: 145px;background-size:auto 100%;border-radius:150px; border:1px solid #1fae9e !important;")
+                                tr 
+                                    td(height="10")
+                                tr 
+                                    td(height="45",)
+                                        span(style="margin: 5px") 
+
+                                            // company image
+                                            img(src="https://i.imgur.com/fCNxWg7.png", alt="",width="140px", height="auto", style="width:140px; max-width: 140px;")
+                                tr 
+                                    td(height="10") 
+                td(width="20px")
+
+                td(align="center",width="100%", height="200px",style="width:200px;max-width:200px;", )                
+                    h2.center(style="color:#1c1c1c;font-size:1.2rem; font-family:Arial, sans-serif;font-weight: bold;text-align:left;display:block") 
+                        span=user[0]
+                        span=user[1]
+                        span=user[2]
+                    p.center(style="color:#1c1c1c;font-size:0.85rem; font-family:Arial, sans-serif;text-align:left;display:block") 
+                        span=user[3]
+                    p.center(style="color:#1c1c1c;font-size:0.85rem; font-family:Arial, sans-serif;text-align:left;display:block") 
+                        span=user[4]
+                    p.center(style="color:#1c1c1c;font-size:0.8rem; font-family:Arial, sans-serif;font-weight: bold;text-align:left;display:block ")
+                        span=user[5]
+                td(width="10px")
+                td(align="center",width="100%",style="width:260px;max-width:260px", ) 
+                    table(border="0",width="100%", style="display:block;width:260px;max-width:260px;border-collapse: collapse;", cellspacing="0", cellpadding="0",)  
+                        tbody
+                            tr(height="25") 
+                            tr 
+                                +contactblock(icon[0], contact[0])
+
+                            td(height="20")
+                            tr
+                                +contactblock(icon[1], contact[1])
+
+                            td(height="20")
+                            tr
+                                +contactblock(icon[2], contact[2])
+                            td(height="20")
+                            tr
+                                +contactblock(icon[3], contact[3])
+
+            tr(width="10px")
+
+            tr.icon(style="text-align:end;display:block") 
+                td(width="10px",style="width:10px;max-width:10px;display:block")
+                td(style="text-align:end;display:block")
+
+                    +socialicon(social[0])
+
+                    +socialicon(social[1])
+
+                    +socialicon(social[2])
+
+                    +socialicon(social[3])
+
+                td(width="10px",style="width:10px;max-width:10px;display:block")
+
+            tr.spacing(style="display:block;")  
+            tr(height="10px")
+
+            tr.calltoaction(style="display:block;")  
+                td(style="display:block")
+                    table(border="0",cellpadding="0", cellspacing="0", style="border:0;display:block;")  
+                        tbody 
+                            tr.calltoaction(style="word-break: break-word;display:inline-flex") 
+                                td(style="")
+                                    span(style="") 
+                                        img.patternimg(width="460",height="100" style="width:460px;height:100px;max-width:460px;max-height:100px;-o-object-fit: cover;object-fit: cover; overflow: hidden;", src="https://img.freepik.com/free-vector/geometric-groovy-seamless-pattern_23-2148825765.jpg?w=1380&t=st=1683092927~exp=1683093527~hmac=d7ce6e1ac3e73d4137d27d898d14f8bc7701e0bf4a67dfe668f81a8c926acab9", alt="")
+                                td(align="center",style="display:block;text-align:center;font-size:18px !important;") 
+                                    span 
+                                        a.call(href="https://marketingplatform.google.com/intl/es/about/",height="100%", target="_blank", border="0", style="background-color:#1fae9e;display:flex;text-decoration:none;border:0;max-width:200px;width:200px;height:100px;max-height:100px;font-size:18px !important;font-family:Arial, sans-serif;font-weight: bold; color:#f7f7f7;text-align: center;line-height:32px;overflow: hidden; word-break: break-word; ") 
+                                            p(style="margin:auto;font-size:18px !important;") Check out our recent<br> Blog Post
+
+                                            //span.call(style="font-size:22px;") Check out 
+                                            //br
+                                            //span.call(style="font-size:22px;") our recent
+                                            //br
+                                            //span.call(style="font-size:22px;") Blog Post
+
+            tr(height="10px")
+            tr 
+                td
+                    span 
+                        h3(style="color:#1fae9e;font-size:0.8rem; font-family:Arial, sans-serif;text-align:center;display:block") Terms of service 
+
+            tr() 
+
+                td(align="justify")
+                    span 
+                        p(align="justify", style="color:#1c1c1c;font-size:0.7rem; font-family:Arial, sans-serif;display:inline")=terms[0]
+            tr.spacing(style="display:block;")  
+                td(height="10px")
+

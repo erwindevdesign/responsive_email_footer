@@ -1,0 +1,28 @@
+-var user = ["Laura"," Hernández"," García", "UX and UI Designer", "Desarrollo de Producto Marketing ", "Aurora S.A. de C.V."]
+-var contact = ["999.235.3366  |  999.956.4633","laura.marketing@gmail.com", "www.marketingplatform.google.com","Av. Moliere 222, Polanco, 11570 Ciudad de México, CDMX" ]
+-var icon = ["https://i.imgur.com/dptZkZk.png","https://i.imgur.com/KNC1xOx.png","https://i.imgur.com/yripwjP.png","https://i.imgur.com/w0gsp1a.png" ]
+-var social = ["https://i.imgur.com/RDF3jfy.png","https://i.imgur.com/iKQOm5S.png", "https://i.imgur.com/JA7E3BT.png","https://i.imgur.com/NNBVoxv.png"]
+-var terms = ["Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, quod odio? Dignissimos perspiciatis iusto veritatis consectetur illo minima ea, debitis, quos optio sint laudantium sapiente perferendis cupiditate provident laborum alias quas saepe, ducimus doloribus maiores consequuntur officiis beatae ipsam esse. Quisquam illum ut ducimus dolore beatae ad, obcaecati impedit numquam, inventore tempora quam praesentium vero ea, ipsum harum magnam nam tenetur? Eaque ea inventore asperiores laboriosam quisquam impedit nemo molestiae suscipit amet quia perspiciatis nesciunt, iste soluta debitis obcaecati deserunt tempore accusamus nostrum, temporibus sunt similique aut quidem velit. Iure asperiores deleniti suscipit laboriosam consequuntur labore similique possimus nulla nam?"]
+
+mixin contactblock(icon, data) 
+    td(style="text-align: center;") 
+        span(width="10", style="text-align:center") 
+            img(src=icon, alt="",style="width:22px;height:22px;"  )      
+    td(width="10px",style="width:10px;max-width:10px;display:block")
+    td(style="text-align: left;") 
+        span(width="10", style="text-align:center;color:#1c1c1c;") 
+            a(href="https://wa.me/527771867872/?text=Hola.%20Si%20te%20gusto%20nuestro%20producto%20muestra,%20envía%20este%20mensaje%20para%20contactarte.%20Saludos%20ʕ•́ᴥ•̀ʔっ%20@erwindevdesign%20id:%20031-9802",target="_blank", border="0", style="text-decoration:none;border:0;color:#1c1c1c;") 
+                p(style="color:#1c1c1c;font-size:0.85rem; font-family:Arial, sans-serif;text-align:center;display:inline;")=data
+
+mixin socialicon(icon) 
+    a(href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiH2-vQ0Nn-AhX8LUQIHQ3XBSMQFnoECBAQAQ&url=https%3A%2F%2Fes-la.facebook.com%2F&usg=AOvVaw2k8t17LRAG2cEJiOAR1RcZ", target="_blank", border="0", style="text-decoration:none;border:0;text-align:end;") 
+        span 
+            img(src=icon, alt="facebook icon", style="width:23px;height:23px;text-decoration:none;border:0;text-align:end;" )
+
+
+doctype html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
+html(lang="en", dir="ltr", xmlns="http://www.w3.org/1999/xhtml")
+    
+    include head.pug    
+
+block content
