@@ -17,7 +17,7 @@
 
 <img align='right' width='290'  src='https://i.imgur.com/Od8ElaN.png'></a>
 
-<p style="text-align:justify">Dentro de las herramientas existentes en posicionamiento de marca, la implementación de un footer o firma digital personalizada dentro de la estructura de un correo y su uso recurrente en el ámbito profesional, empresarial, de negocios, académico y político permite trasladar los conceptos de branding al receptor del correo.</p>
+<p style="text-align:justify">Dentro de las herramientas existentes en posicionamiento de marca, la implementación de una firma digital personalizada dentro de la estructura de un correo y su uso recurrente en el ámbito profesional, empresarial, de negocios, académico y político permite trasladar los conceptos de branding al receptor del correo.</p>
 
 <p style="text-align:justify">La firma digital nos permite <a style="color:#1D70B7 "> instrumentalizar</a> la comunicación de la marca dentro de los diferentes usos cotidianos que hacemos del correo electrónico, otorgando al usuario un referente de validez en su comunicación con el receptor del correo, del mismo modo esta herramienta permite su uso en marketing segmentado por usuario y su posición en los diferentes hitos del <a style="color:#1D70B7 ">journey</a> de compra utilizando metodologías de marketing.</p>
 
